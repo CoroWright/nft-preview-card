@@ -35,7 +35,7 @@ body p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 350px;
+    width: 300px;
     padding: 1.5rem;
     border-radius: .75rem;
 }
@@ -102,10 +102,4 @@ hr {
 
 span {
     color: var(--white);
-}
-
-@media (max-width:600px) {
-    .card {
-        width: 300px;
-    }
 }
