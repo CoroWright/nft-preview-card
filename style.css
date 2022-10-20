@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+p {
+    color: var(--soft-blue);
+}
+
 body {
     background-color: var(--very-dark-blue--mainbg);
     color: var(--white);
@@ -31,17 +35,29 @@ body p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 300px;
-    padding: .5rem;
+    max-width: 350px;
+    padding: 1.5rem;
+    border-radius: .75rem;
 }
 
 .img-nft {
     max-width: 100%;
+    border-radius: .5rem;
+}
+
+.nft {
+    margin-top: 1rem;
+}
+
+.description {
+    margin-top: 1rem;
+    color: var(--soft-blue);
 }
 
 .price-expiration {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .price {
@@ -52,6 +68,7 @@ body p {
 
 .price p {
     padding-left: .5rem;
+    color: var(--cyan);
 }
 
 .expiration {
@@ -64,8 +81,31 @@ body p {
     padding-left: .5rem;
 }
 
+hr {
+    margin-top: 1rem;
+}
+
 .owner {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 1rem;
+}
+
+.owner img {
+    height: 1.75rem;
+    margin-right: .75rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: .1rem;
+}
+
+span {
+    color: var(--white);
+}
+
+@media (max-width:600px) {
+    .card {
+        width: 300px;
+    }
 }
