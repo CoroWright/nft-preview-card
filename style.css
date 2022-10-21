@@ -130,3 +130,13 @@ span {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
